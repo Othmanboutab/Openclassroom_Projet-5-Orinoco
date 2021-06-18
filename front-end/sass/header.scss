@@ -1,0 +1,55 @@
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
+    nav {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        .cercle {
+            background-color: rgb(143, 94, 239);
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin: 0;
+            margin-top: -28px;
+            margin-left: 24px;
+        }
+        .chiffreCercle {
+            text-align: center;
+            margin-top: -14px;
+            margin-left: 24px;
+            color: white;
+            font-size: small;
+        }
+        a {
+            text-decoration: none;
+            font-size: 27px;
+            color: rgb(143, 94, 239);
+            font-family: "Comic Sans MS", cursive;
+            margin-left: 60px;
+        }
+    }
+    img {
+        height: 220px;
+        width: 100%;
+        margin-top: 5px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 824px) {
+    header {
+        width: 100%;
+        a {
+            margin-left: 40px;
+        }
+    }
+}
