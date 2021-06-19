@@ -33,7 +33,9 @@ if (produitInLocalStorage === null || produitInLocalStorage == 0) {
     } &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>Lenses :</strong>${
       produitInLocalStorage[i].lenses
     } </p> 
-<p class="quan"><strong>Quantité : ${produitInLocalStorage[i].quantite}</strong></p>
+<p class="quan"><strong>Quantité : ${
+      produitInLocalStorage[i].quantite
+    }</strong></p>
 
 <p class="quan"> <strong>Prix total :</strong> ${multiple()}$</p>
 <button class="btn_supprimer">supprimer </button>
@@ -212,12 +214,10 @@ btn_formulaire.addEventListener("click", (e) => {
     email: document.querySelector("#mail").value,
   };
 
-  const envoyer = {
-    products: produitInLocalStorage,
-    contact: formulaireValeur,
-  };
-
-  localStorage.removeItem("produit");
+  // const envoyer = {
+  //   products: produitInLocalStorage,
+  //   contact: formulaireValeur,
+  // };
 
   //***********************************controle du formulaire ******//
 
@@ -290,37 +290,31 @@ btn_formulaire.addEventListener("click", (e) => {
       villeControle() &&
       emailcontrole()
     ) {
-      //mettre les value dans le localstorage
-      localStorage.setItem(
-        "formulaireValeur",
-        JSON.stringify(formulaireValeur)
-      );
+      const products = JSON.parse(localStorage.getItem("produit"));
 
       const envoyer = {
-        products: produitInLocalStorage,
+        products: [],
         contact: formulaireValeur,
       };
 
-      // envoyer les donnée avec Post
-      const requestOptions = {
-        method: "POST",
-        body: JSON.stringify(envoyer),
-        headers: { "Content-Type": "application/json; charset=utf-8" },
-      };
-      fetch("http://localhost:3000/api/cameras/order", requestOptions, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ envoyer }),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          localStorage.setItem("order", JSON.stringify(data));
+      let objetRequest = JSON.stringify(envoyer);
 
-          window.location.href = "confirmation.html";
+      console.log("objet" + objetRequest);
+      fetch("http://localhost:3000/api/cameras/order", {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+        body: objetRequest,
+      })
+        .then((data) => {
+          return data.json();
         })
-        .catch((error) =>
-          alert("Un des champ du formulaire n'est pas correct !")
-        );
+        .then((json) => {
+          localStorage.setItem("order", json.orderId);
+          location.href = "confirmation.html";
+        });
+      localStorage.removeItem("produit");
     } else {
       alert("Veuillez bien remplir le formulaire");
     }

@@ -1,34 +1,27 @@
-(async function() {
+(async function () {
     const articles = await getArticle()
 
     for (article of articles) {
         gabaritProduit(article)
-
     }
-
-
 })()
 
 
 //fonction pour recuperer les données de l'api
 function getArticle() {
     return fetch("http://localhost:3000/api/cameras")
-        .then(function(httpBodyResponse) {
+        .then(function (httpBodyResponse) {
             return httpBodyResponse.json()
         })
-        .then(function(articles) {
+        .then(function (articles) {
             return articles
         })
-        .catch(function(error) {
+        .catch(function (error) {
             alert(
                 "La connexion au serveur n'a pas pu être effectué."
             )
         })
 }
-
-
-
-
 //fonction pour envoyer le contenu dans HTML
 function gabaritProduit(produit) {
 
@@ -69,7 +62,6 @@ function panniervide() {
 
 
 panniervide()
-
 
 
 //si le panier est rempli
