@@ -2,7 +2,6 @@ footer {
   background-color: #f6f6f6;
   margin-top: 30px;
 }
-
 footer h3 {
   width: 100%;
   padding: 20px;
@@ -16,7 +15,6 @@ footer h3 {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,11 +33,9 @@ footer ul {
   padding: 0;
   margin: 0;
 }
-
 footer ul li {
   margin-bottom: 20px;
 }
-
 footer ul li a {
   text-decoration: none;
   color: black;
@@ -49,8 +45,16 @@ footer ul li a {
   h3 {
     font-size: 14px;
   }
-}
 
+  footer {
+    width: 90%;
+    margin-left: 10px;
+  }
+  footer h3 {
+    font-size: 80%;
+    padding-left: 5px;
+  }
+}
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,7 +70,6 @@ header {
   -ms-flex-pack: center;
   justify-content: space-between;
 }
-
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,7 +82,6 @@ header nav {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-
 header nav .cercle {
   background-color: #8f5eef;
   width: 15px;
@@ -89,7 +91,6 @@ header nav .cercle {
   margin-top: -28px;
   margin-left: 24px;
 }
-
 header nav .chiffreCercle {
   text-align: center;
   margin-top: -14px;
@@ -97,7 +98,6 @@ header nav .chiffreCercle {
   color: white;
   font-size: small;
 }
-
 header nav a {
   text-decoration: none;
   font-size: 27px;
@@ -105,7 +105,6 @@ header nav a {
   font-family: "Comic Sans MS", cursive;
   margin-left: 60px;
 }
-
 header img {
   height: 220px;
   width: 100%;
@@ -122,12 +121,10 @@ header img {
     margin-left: 40px;
   }
 }
-
 body {
   margin: 0 60px;
   padding: 0;
 }
-
 body .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,16 +140,13 @@ body .info {
       -ms-flex-align: center;
           align-items: center;
 }
-
 body i {
   height: 40px;
 }
-
 body section {
   background-color: #f6f6f6;
   margin-top: 60px;
 }
-
 body h1 {
   width: 100%;
   display: -webkit-box;
@@ -161,14 +155,12 @@ body h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: 'Comic Sans MS', cursive;
+  font-family: "Comic Sans MS", cursive;
   padding-top: 20px;
 }
-
 body p {
   font-size: 20px;
 }
-
 body .bouton {
   margin: 10px;
   padding: 5px 10px 5px 10px;
@@ -188,5 +180,20 @@ body .bouton {
   body {
     margin: 0;
   }
-}
-/*# sourceMappingURL=confirmation.css.map */
+  body header img {
+    width: 100%;
+  }
+  body #hero {
+    width: 90%;
+    margin-left: 15px;
+    padding-bottom: 20px;
+  }
+  body #hero h1 {
+    font-size: 18px;
+    margin-left: 40px;
+    width: 90%;
+  }
+  body #hero p {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=confirmation.css.map */

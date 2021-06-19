@@ -8,8 +8,8 @@ function showgabaritconfirmation() {
 
  <h1>Félicitation, votre commande a bien été prise en compte !</h1>
  <div class="info">
-     <p> <strong>Prix total:${produitInLocalStorage}</strong> </p>
-     <p>Identifiant de votre commande : ${order} </p>
+     <p> <strong>Prix total:${produitInLocalStorage}$</strong> </p>
+     <p><strong>Identifiant de votre commande :  </strong> ${order}</p>
      <a class="bouton" href="/front-end/index.html">Retour a la page d'acceuil</a>
  </div>
     `

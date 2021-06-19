@@ -150,8 +150,12 @@ body {
             height: auto;
             padding: 0px 0px;
             border-radius: 25px;
-            display: initial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             flex-direction: initial;
+            width: 90%;
+            margin-left: 20px;
             a {
                 margin-left: 0px;
             }
@@ -167,6 +171,7 @@ body {
         }
         .hero {
             width: 90%;
+            margin-left: 20px;
             article {
                 width: 100%;
                 p {

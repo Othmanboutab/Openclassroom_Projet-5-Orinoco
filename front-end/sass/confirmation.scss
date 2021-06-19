@@ -44,5 +44,27 @@ body {
 @media only screen and (max-width: 824px) {
     body {
         margin: 0;
+
+        header{
+            img{
+                width: 100%;
+            }
+        }
+
+        #hero{
+            width: 90%;
+         margin-left: 15px;
+         padding-bottom: 20px;
+
+         h1{
+             font-size:18px;
+             margin-left: 40px;
+             width: 90%;
+         }
+
+         p{
+             font-size: 14px;
+         }
+        }
     }
 }

@@ -2,7 +2,6 @@ footer {
   background-color: #f6f6f6;
   margin-top: 30px;
 }
-
 footer h3 {
   width: 100%;
   padding: 20px;
@@ -16,7 +15,6 @@ footer h3 {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,11 +33,9 @@ footer ul {
   padding: 0;
   margin: 0;
 }
-
 footer ul li {
   margin-bottom: 20px;
 }
-
 footer ul li a {
   text-decoration: none;
   color: black;
@@ -49,8 +45,16 @@ footer ul li a {
   h3 {
     font-size: 14px;
   }
-}
 
+  footer {
+    width: 90%;
+    margin-left: 10px;
+  }
+  footer h3 {
+    font-size: 80%;
+    padding-left: 5px;
+  }
+}
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,7 +70,6 @@ header {
   -ms-flex-pack: center;
   justify-content: space-between;
 }
-
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,7 +82,6 @@ header nav {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-
 header nav .cercle {
   background-color: #8f5eef;
   width: 15px;
@@ -89,7 +91,6 @@ header nav .cercle {
   margin-top: -28px;
   margin-left: 24px;
 }
-
 header nav .chiffreCercle {
   text-align: center;
   margin-top: -14px;
@@ -97,7 +98,6 @@ header nav .chiffreCercle {
   color: white;
   font-size: small;
 }
-
 header nav a {
   text-decoration: none;
   font-size: 27px;
@@ -105,7 +105,6 @@ header nav a {
   font-family: "Comic Sans MS", cursive;
   margin-left: 60px;
 }
-
 header img {
   height: 220px;
   width: 100%;
@@ -122,12 +121,10 @@ header img {
     margin-left: 40px;
   }
 }
-
 body {
   margin: 0 60px;
   padding: 0;
 }
-
 body main {
   margin-top: 20px;
   border-radius: 25px;
@@ -138,7 +135,6 @@ body main {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-
 body .aside {
   background-color: #f2f2f2;
   margin-top: 40px;
@@ -146,22 +142,18 @@ body .aside {
   padding: 0px 20px;
   border-radius: 25px;
 }
-
 body .aside h3 {
   color: #8f5eef;
   padding: 0 20px;
 }
-
 body .aside a {
   text-decoration: none;
   color: black;
   margin-left: 30px;
 }
-
 body .aside ul {
   padding: 0;
 }
-
 body .aside ul li {
   list-style: none;
   margin-top: 10px;
@@ -183,7 +175,6 @@ body .aside ul li {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 .hero h1 {
   width: 100%;
   display: -webkit-box;
@@ -194,11 +185,9 @@ body .aside ul li {
           justify-content: center;
   font-family: "Comic Sans MS", cursive;
 }
-
 .hero .titre {
   width: 100%;
 }
-
 .hero article {
   background-color: white;
   margin: 20px;
@@ -209,15 +198,12 @@ body .aside ul li {
   -webkit-box-shadow: 1px 1px 25px #d6d5d5;
           box-shadow: 1px 1px 25px #d6d5d5;
 }
-
 .hero article:hover p {
   display: block;
 }
-
 .hero article:hover img {
   height: 145px;
 }
-
 .hero article:hover h2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,15 +212,12 @@ body .aside ul li {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 .hero article:hover .price {
   display: block;
 }
-
 .hero article:hover img {
   height: 135px;
 }
-
 .hero article img {
   width: 99%;
   height: 240px;
@@ -244,7 +227,6 @@ body .aside ul li {
   -webkit-transition: 0.8s ease-in-out;
   transition: 0.8s ease-in-out;
 }
-
 .hero article .descr {
   font-size: 14px;
   display: none;
@@ -256,18 +238,15 @@ body .aside ul li {
   margin: 5px;
   border-radius: 15px;
 }
-
 .hero article a {
   color: black;
   text-decoration: none;
 }
-
 .hero article h2 {
   font-size: 17px;
   display: none;
   margin: 5px;
 }
-
 .hero article .price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -284,7 +263,6 @@ body .aside ul li {
   position: relative;
   display: none;
 }
-
 .hero article .fas {
   position: absolute;
   right: 5px;
@@ -292,12 +270,10 @@ body .aside ul li {
   font-size: 22px;
   color: #8f5eef;
 }
-
 .hero article .button {
   width: 20px;
   color: black;
 }
-
 .hero article .prix {
   margin-left: 5px;
   border: none;
@@ -328,11 +304,21 @@ body .aside ul li {
     height: auto;
     padding: 0px 0px;
     border-radius: 25px;
-    display: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: initial;
     -webkit-box-direction: initial;
         -ms-flex-direction: initial;
             flex-direction: initial;
+    width: 90%;
+    margin-left: 20px;
   }
   body .aside a {
     margin-left: 0px;
@@ -348,6 +334,7 @@ body .aside ul li {
   }
   body .hero {
     width: 90%;
+    margin-left: 20px;
   }
   body .hero article {
     width: 100%;
@@ -385,5 +372,4 @@ body .aside ul li {
     position: relative;
     display: block;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

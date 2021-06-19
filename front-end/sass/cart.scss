@@ -136,11 +136,14 @@ body {
                 background-color: #f6f6f6;
                 margin-top: 30px;
                 border-radius: 25px;
-                width: 100%;
+                width: 90%;
+                margin-left:20px;
                 h2 {
                     margin: 0;
                     width: 100%;
-                    padding: 20px 0 10px 20px;
+                    padding: 20px 0 20px 20px;
+                    font-size: 18px;
+                    text-decoration: underline;
                 }
                 .name,
                 .tel {
@@ -149,16 +152,47 @@ body {
                     .info {
                         margin-left: 0px;
                         align-items: center;
+                        margin-top: 20px;
                     }
                 }
                 .infolivraison {
                     display: flex;
                     flex-direction: column;
+                    margin-top: 20px;
+
                     input {
                         margin-right: 0px;
+                        margin-bottom: 20px;
+                        
                     }
+
                 }
             }
-        }
+
+            .pannier{
+                width:90%;
+                margin-left:20px;
+                padding-bottom: 20px;
+    
+                #pannier_contenu{
+                    .info{
+                        display: flex;
+                        flex-direction: column;
+
+                        p{
+                            margin-left: 80px;
+                        }
+
+                        .quan{
+                            margin-left:-20px;
+                        }
+                    }
+                    
+                   
+                }  
+            }
+        } 
     }
+
+   
 }

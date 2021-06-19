@@ -33,9 +33,9 @@ if (produitInLocalStorage === null || produitInLocalStorage == 0) {
     } &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>Lenses :</strong>${
       produitInLocalStorage[i].lenses
     } </p> 
-<p><strong>Quantité : ${produitInLocalStorage[i].quantite}</strong></p>
+<p class="quan"><strong>Quantité : ${produitInLocalStorage[i].quantite}</strong></p>
 
-<p> <strong>Prix total :</strong> ${multiple()}$</p>
+<p class="quan"> <strong>Prix total :</strong> ${multiple()}$</p>
 <button class="btn_supprimer">supprimer </button>
 
 </div>
