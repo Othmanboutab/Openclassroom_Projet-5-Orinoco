@@ -10,10 +10,7 @@
 })()
 
 
-
-
-
-
+//fonction pour recuperer les données de l'api
 function getArticle() {
     return fetch("http://localhost:3000/api/cameras")
         .then(function(httpBodyResponse) {
@@ -31,6 +28,8 @@ function getArticle() {
 
 
 
+
+//fonction pour envoyer le contenu dans HTML
 function gabaritProduit(produit) {
 
     document.getElementById("hero").innerHTML += `
