@@ -299,7 +299,6 @@ btn_formulaire.addEventListener("click", (e) => {
 
       let objetRequest = JSON.stringify(envoyer);
 
-      console.log("objet" + objetRequest);
       fetch("http://localhost:3000/api/cameras/order", {
         headers: {
           "Content-Type": "application/json",
