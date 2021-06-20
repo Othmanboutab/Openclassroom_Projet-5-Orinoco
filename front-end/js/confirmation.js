@@ -55,3 +55,5 @@ function panierrempli() {
 
 panierrempli();
 localStorage.clear();
+
+

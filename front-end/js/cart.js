@@ -160,7 +160,7 @@ function showFormulaire() {
             </div>
             <div class="info">
                 <label for="firstname">Prénom :</label><span id="prenommanquant"></span>
-                <input class="input" type="text" id="firstname" name="user_firstname">
+                <input class="input" type="text" id="firstname" name="user_firstname" required >
                 
            
                 </div>
@@ -171,7 +171,7 @@ function showFormulaire() {
             
             <div class="info">
                 <label for="mail">e-mail :</label><span id="mailmanquant"></span>
-                <input class="input" type="email" id="mail" name="user_mail" required placeholder="orinoco@orinoco.com">
+                <input class="input" type="email" id="mail" name="user_mail" placeholder="orinoco@orinoco.com" required >
                 
           
                 </div>
