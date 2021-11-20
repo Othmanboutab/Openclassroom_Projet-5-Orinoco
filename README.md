@@ -44,9 +44,7 @@ TODO
 ```
 
 Tester l'application web
-Tester le site en ligne
 
-Pour tester simplement l'application web, rendez-vous sur orinoco.mathisbarre.com
 Tester le site en local
 Prérequis
 
